@@ -1,5 +1,5 @@
 import { AppBar, Box, Toolbar } from "@mui/material";
-import theMovie from "../../assets/themovie.svg";
+import dcdLogo from "../../assets/DacodesLogo.jpg";
 import imgUser from "../../assets/user.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src={theMovie}
+            src={dcdLogo}
             alt="logoDacodes"
             style={{ width: "172px" }}
             onClick={() => navigate("/")}
