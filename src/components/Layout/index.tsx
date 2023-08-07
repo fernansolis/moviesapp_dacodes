@@ -15,6 +15,7 @@ const Layout = ({ children }: Props) => {
           backgroundColor: "#03067B",
           maxWidth: "350vh",
           minHeight: "100vh",
+          paddingTop: "1vh"
         }}
       >
         {children}
