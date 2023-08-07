@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { Box, Checkbox, FormControlLabel, Typography } from "@mui/material";
 import Layout from "../../components/Layout";
 import { IAlert } from "../../interfaces/alert";

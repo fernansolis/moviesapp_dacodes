@@ -27,7 +27,7 @@ const Home = () => {
   const [movieList, setMovieList] = useState("now_playing");
   const [title, setTitle] = useState("");
   const [loading, setLoading] = useState(false);
-  const [genres, setGenres] = useState("");
+  const [genres, setGenres] = useState<any[]>([]);
 
   const theme = createTheme({
     palette: {
@@ -106,6 +106,7 @@ const Home = () => {
   }, [movieList, selectedButton, page]);
 
   const handleChange = (e: React.ChangeEvent<unknown>, value: number) => {
+    console.log(e);
     setPage(value);
   };
 
