@@ -1,0 +1,95 @@
+.groupButtons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 3%;
+}
+
+.buton-style{
+	color: white;
+	border-radius: 50px;
+	width: 10%;
+	background: linear-gradient(#3AE3C3,
+				#4E6CE4,
+				#563FF0);
+	border: none;
+}
+
+.textHome{
+	margin-top: 3%;
+	margin-left: 6%;
+}
+
+.containerImages{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.subContainerImg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3%;
+	width: 100%;
+}
+
+.imageOverlay{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+
+}
+
+.images {
+	width: 100%;
+	border-radius: 50px;
+	z-index: 1;
+	object-fit: cover;
+}
+
+.hovered{
+	width: 100%;
+	height: 100%;
+	background-color: #563FF0;
+  	z-index: 2;
+	position: absolute;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0.9;
+}
+
+.movieTitle{
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+
+.movieData{
+	font-size: 12px;
+	text-align: center;
+	color: white;
+}
+
+.sinopsis{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 12px;
+}
+
+.rating{
+	margin-left: 10%;
+		margin-right: 10%;
+}
+
+.containerPagination{
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	padding-bottom: 5%;
+}
