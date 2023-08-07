@@ -93,10 +93,10 @@ const Login = () => {
       <>
         <ModalLoading loading={loading} />
         <Box className="container-login">
-          <Typography variant="h4" color={"black"}>
+          <Typography variant="h4" color={"white"}>
             Login
           </Typography>
-          <Typography variant="subtitle1" color={"black"}>
+          <Typography variant="subtitle1" color={"white"}>
             ¡Bienvenido!
           </Typography>
           <br />

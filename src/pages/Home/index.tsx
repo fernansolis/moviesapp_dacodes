@@ -160,10 +160,10 @@ const Home = () => {
           </Grid>
         </Grid>
         <div className="textHome">
-          <Typography variant="h4" color={"black"}>
+          <Typography variant="h4" color={"white"}>
             {title}
           </Typography>
-          <Typography variant="subtitle1" color={"black"}>
+          <Typography variant="subtitle1" color={"white"}>
             Texto introductorio
           </Typography>
         </div>
