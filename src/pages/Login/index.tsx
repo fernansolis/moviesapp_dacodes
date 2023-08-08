@@ -19,7 +19,8 @@ const Login = () => {
     message: "",
     severity: "success",
   });
-
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     if (name === "email") {
@@ -30,15 +31,13 @@ const Login = () => {
   };
 
   const checkFields = () => {
-    return email === "" || password === "" || check === false;
+    return !emailRegex.test(email) || password.length < 7 || check === false;
   };
 
   const isFieldsEmpty = checkFields();
 
   const handleValidate = () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordRegex = /^(?=.*[A-Z]).{8,}$/;
-    if (!emailRegex.test(email) || !passwordRegex.test(password)) {
+    if (!emailRegex.test(email) || password.length < 7) {
       return false;
     }
     return true;

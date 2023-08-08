@@ -122,9 +122,6 @@ const Home = () => {
     setIsHovered(updatedHovered);
   };
 
-  // console.log(data);
-  console.log(genres);
-
   return (
     <Layout>
       <>
