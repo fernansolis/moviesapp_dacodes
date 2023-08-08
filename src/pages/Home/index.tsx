@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Grid } from "@mui/material";
+import { Grid, PaginationItem } from "@mui/material";
 import Layout from "../../components/Layout";
 import CustomButton from "../../components/Button";
 import "./home.css";
@@ -223,7 +223,13 @@ const Home = () => {
               count={totalPages}
               page={page}
               onChange={handleChange}
-              color="primary"
+              color="secondary"
+              renderItem={(item) => (
+                <PaginationItem
+                  sx={{color:'white'}}
+                  {...item}
+                />
+              )}
             />
           </ThemeProvider>
         </div>
